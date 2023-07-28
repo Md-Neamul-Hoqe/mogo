@@ -1,0 +1,733 @@
+/* 
+    font-family: 'Kaushan Script', cursive;
+    // regular
+    font-family: 'Montserrat', sans-serif;
+    // bold/ regular
+    font-family: 'Roboto', sans-serif;
+    // regular/ light-italic
+
+1pt = 1.333333px
+14pt = 18.667px
+15pt = 20px 
+24pt = 32px
+30pt = 40px
+72pt = 96px
+*/
+
+/* 
+==============================================================
+                    GENERAL PROPERTIES
+==============================================================
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #ffffff;
+  color: black;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+}
+.row {
+  max-width: 1199px;
+  margin: 0 auto;
+}
+.btn:link,
+.btn:visited,
+.btn {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  background-color: transparent;
+  border: 3px solid #fff;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 10px 30px;
+  margin: 60px 0;
+}
+.lineThrough {
+  display: block;
+  margin: 0 auto 50px;
+  clear: both;
+}
+/* 
+==============================================================
+                    START HOME SECTION
+==============================================================
+*/
+#home-section {
+  background: #f38181 url("../images/home_banner.jpg") no-repeat;
+  color: white;
+  min-height: 150vh;
+  position: relative;
+}
+#home-section .row {
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.logo-mogo {
+  height: 35px;
+  width: auto;
+  margin-top: 35px;
+  float: left;
+}
+/* Navbar section */
+.main-nav {
+  float: right;
+}
+.main-nav li {
+  display: inline-block;
+  margin-top: 40px;
+  font-family: "Roboto", sans-serif;
+}
+.main-nav li a:link,
+.main-nav li a:visited {
+  color: #fff;
+  background-color: transparent;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 5px 16px;
+  border-radius: 0;
+}
+.main-nav li a:active,
+.main-nav li a:focus,
+.main-nav li a:hover {
+  color: #fce38a;
+  background-color: transparent;
+  border-style: none none solid none;
+  border-width: 0 0 2px 0;
+}
+/* HEADER TEXT */
+.header_text {
+  position: absolute;
+  font-family: "Kaushan Script", cursive;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.header_text h3 {
+  font-size: 72px;
+  text-transform: capitalize;
+}
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 150px;
+  line-height: 140px;
+  margin: 40px;
+  text-transform: uppercase;
+}
+/* SLIDER UNDER HOME SECTION */
+.slideIndecators {
+  width: 80%;
+  list-style: none;
+  position: absolute;
+  top: 94%;
+  left: 10%;
+  /* transform: translate(-50%, -36%); */
+}
+.slideIndecators li {
+  width: 23%;
+  float: left;
+  margin-right: 2%;
+  line-height: 200%;
+  border-color: #f8ebc5;
+  border-style: solid none none none;
+  border-width: 2px 0 0 0;
+  padding: 10px 40px 10px 0px;
+}
+.slideIndecators > li > a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+}
+.slideIndecators li a span {
+  margin-right: 5px;
+  font-size: 24px;
+  font-weight: 700;
+}
+.slideIndecators li:hover {
+  border-color: #fff;
+  border-style: solid none none none;
+  border-width: 2px 0 0 0;
+}
+/* 
+==============================================================
+                    END HOME SECTION
+==============================================================
+*/
+/*
+==============================================================
+                    START ABOUT SECTION
+==============================================================
+*/
+#about-section > .row,
+#service-section > .row,
+#services-section > .row,
+#blog-section > .row,
+#contact-section > .row,
+#portfolio-section > .row,
+#lblog-section > .row,
+#comment-section > .row {
+  text-align: center;
+  margin-top: 50px;
+}
+/* STORY ABOUT US */
+#about-section > .row h2,
+#service-section > .row h2,
+#services-section > .row h2,
+#blog-section > .row h2,
+#contact-section > .row h2,
+#portfolio-section > .row h2,
+#lblog-section > .row h2,
+#comment-section > .row h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  margin-top: 5px;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  color: #333333;
+}
+/* WHAT WE DO */
+#about-section .row h3,
+#service-section .row h3,
+#services-section .row h3,
+#blog-section > .row h3,
+#contact-section > .row h3,
+#portfolio-section > .row h3,
+#lblog-section > .row h3,
+#comment-section > .row h3 {
+  font-family: "Kaushan Script", cursive;
+  font-size: 24px;
+  text-transform: capitalize;
+  color: #333333;
+}
+/* ABOUT SECTION TEXT */
+#about-section > .row p,
+#services-section > .row p,
+#portfolio-section > .row p,
+#lblog-section > .row p,
+#contact-section > .row p {
+  color: #b3b3b3;
+  padding-bottom: 50px;
+}
+/* IMAGES */
+.row.services {
+  width: 100%;
+  margin-bottom: 70px;
+}
+.services img {
+  width: 31%;
+}
+.services img:nth-child(2) {
+  margin: 0 3%;
+}
+/* COUNTER SECTION */
+#about-section .counters {
+  min-height: 200px;
+  background-color: #95e1d3;
+  width: 100%;
+}
+#about-section .counters > .row {
+  margin: 0 auto;
+}
+#about-section .counters .row div.counter {
+  width: 20%;
+  color: #fff;
+  height: 200px;
+  border: #b5eae0 solid 1px;
+  float: left;
+  text-align: center;
+  padding: 50px 0;
+}
+#about-section .counters > .row div.counter .number {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  font-size: 72px;
+}
+#about-section .counters > .row div.counter .counter-text {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+}
+/* 
+==============================================================
+                    END ABOUT SECTION
+==============================================================
+*/
+/* 
+==============================================================
+                    START SERVICE SECTION
+==============================================================
+*/
+#service-section .row {
+  min-height: 300px;
+}
+.card {
+  width: 32%;
+  float: left;
+}
+.card:nth-child(2),
+.card:nth-child(5) {
+  margin-left: 2%;
+  margin-right: 2%;
+}
+.card .card-header {
+  width: 25%;
+  float: left;
+}
+.card .card-body {
+  width: 75%;
+  float: right;
+  clear: right;
+}
+.card .card-body .card-title {
+  color: #333333;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  float: left;
+  margin-bottom: 15px;
+}
+.card .card-body .card-text {
+  color: #b3b3b3;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 300;
+  float: left;
+  text-align: justify;
+}
+.card + hr {
+  float: left;
+  clear: both;
+  margin: 50px 0;
+  width: 100%;
+  color: #e5e5e5;
+}
+/* 
+==============================================================
+                    START BLOG SECTION
+==============================================================
+*/
+#blog-section {
+  background: url("../images/blog_banner.jpg") no-repeat;
+  position: relative;
+  margin-top: 100px;
+  padding-top: 25px;
+}
+#blog-section > .row {
+  margin-bottom: 0;
+}
+#blog-section > .row img:nth-child(5) {
+  position: absolute;
+  left: 53%;
+  top: 53%;
+}
+/* 
+==============================================================
+                    START SERVICES SECTION
+==============================================================
+*/
+#services-section {
+  margin-top: 50px;
+  padding-top: 50px;
+}
+#contact-section .lineThrough,
+#services-section .lineThrough {
+  margin-top: 25px;
+}
+#services-section p + .row {
+  min-height: 380px;
+}
+#services-section .row div.row:nth-child(1) {
+  width: 50%;
+  float: left;
+  text-align: center;
+}
+#services-section .row div.row:nth-child(1) > img {
+  width: 90%;
+}
+#services-section .row div.row:nth-child(2) {
+  width: 50%;
+  float: right;
+}
+/* ACCORDION */
+#accordion .card {
+  margin: 0;
+}
+#accordion .card:nth-child(2) {
+  margin: 10px 0;
+}
+#accordion .card,
+#accordion .card .title,
+#accordion .card .body {
+  width: 100%;
+  border: #b3b3b3 solid 1px;
+  padding: 0;
+}
+#accordion .card .title {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  padding: 5px;
+}
+#accordion .card .title h4 {
+  margin-left: 10px;
+  padding-top: 5px;
+}
+#accordion .card .body {
+  text-align: left;
+  padding: 5px;
+}
+/* SLIDER AREA */
+#slider,
+#slider-1 {
+  margin-top: 50px;
+  background-color: #f8f8f8;
+}
+.slides {
+  height: 200px;
+  position: relative;
+  clear: both;
+  padding: 30px 100px;
+}
+.slides .slide {
+  position: absolute;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  padding-top: 10px;
+}
+.slides .slide .sticker {
+  border: #9bd6ce solid 2px;
+  border-radius: 0;
+  padding: 10px 12px;
+  float: left;
+  margin-right: 10px;
+}
+.slides .slide .sticker img {
+  width: 65px;
+  height: auto;
+  margin: 10px;
+}
+.slides .slide .speech {
+  /* float: left; */
+  width: 800px;
+  margin: 2% 0 0 5%;
+}
+.slides .slide .speech p::before {
+  content: '"';
+}
+.slides .slide .speech p::after {
+  content: '"';
+}
+.slides .slide .speech cite {
+  display: block;
+  margin-top: 10px;
+}
+.slides .slide .speech cite::before {
+  content: url("../images/underLine_yellow.png");
+  margin-right: 10px;
+}
+#sliderIndecators .left,
+#sliderIndecators .right {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 900;
+  margin-top: -10%;
+}
+#sliderIndecators .left {
+  margin-left: 50px;
+  float: left;
+}
+#sliderIndecators .right {
+  float: right;
+  margin-right: 50px;
+}
+/* 
+==============================================================
+                    START CONTACT SECTION
+==============================================================
+*/
+#contact-section .row.services,
+#lblog-section .row.services {
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+#contact-section .row.services div > img,
+#lblog-section .row.services div > img {
+  width: 95%;
+}
+#contact-section .row .row.services .name,
+#lblog-section .row .row.services .name {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  margin-top: 15px;
+}
+#contact-section .row .row.services .fame {
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  font-size: 14px;
+  color: #c6c6c6;
+  margin-top: 10px;
+}
+#contact-section .categories {
+  width: 100%;
+  background-color: #f8f8f8;
+}
+#contact-section .categories img {
+  margin: 30px auto;
+}
+/* 
+==============================================================
+                    START PORTFOLIO SECTION
+==============================================================
+*/
+#portfolio-section .portfolios .img {
+  float: left;
+  width: 25%;
+}
+#portfolio-section .portfolios .img img {
+  width: 100%;
+  min-height: 390px;
+  margin: 0px;
+  padding: 0;
+}
+/* SLIDER EDITION */
+#portfolio-section #slider-1 {
+  background-color: #ffffff;
+}
+#portfolio-section #slider-1 .slides .slide .sticker {
+  border: 0;
+  padding: 0;
+}
+#portfolio-section #slider-1 .slides .slide .sticker img {
+  width: 110px;
+}
+/* 
+==============================================================
+                    END PORTFOLIO SECTION
+==============================================================
+*/
+/*
+==============================================================
+                    START COMMENT SECTION
+==============================================================
+*/
+#comment-section {
+  background: #fff url(../images/comment_banner.jpg) no-repeat;
+  padding-top: 25px;
+  min-height: 700px;
+}
+/* CARD SECTION */
+#comment-section .row .card {
+  width: 48%;
+  float: left;
+  text-align: left;
+  margin-right: 0;
+  margin-top: 50px;
+}
+#comment-section .row .card:nth-child(even) {
+  float: right;
+}
+#comment-section .row .card .card-body .card-title h4 {
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+}
+#comment-section small {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-style: italic;
+  font-weight: 400;
+  text-transform: capitalize;
+  display: block;
+  margin: 10px 0;
+}
+#comment-section .card-header img {
+  display: block;
+}
+/* 
+==============================================================
+END COMMENT SECTION
+==============================================================
+*/
+/* 
+==============================================================
+START LATEST BLOG SECTION
+==============================================================
+*/
+#lblog-section > .row .row.services img + div {
+  text-align: left;
+}
+#lblog-section > .row .row.services img + div .name {
+  margin-left: 10px;
+}
+#lblog-section > .row .row.services img + div .comment p {
+  color: #e5e5e5;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  line-height: 24px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  border: #e5e5e5 solid;
+  border-width: 0 0 1px 0;
+}
+#lblog-section > .row .row.services img + div .views-comment {
+  color: #e5e5e5;
+  margin-left: 10px;
+}
+#lblog-section > .row .row.services img + div .views-comment img {
+  width: 20px;
+  height: 15px;
+  margin-left: 2px;
+}
+.categories .row div {
+  text-align: center;
+}
+#lblog-section .categories {
+  color: #f38181;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background: #b3b3b3 url(../images/map-banner.png) no-repeat;
+}
+
+/* 
+==============================================================
+END LATEST BLOG SECTION
+==============================================================
+*/
+/* 
+==============================================================
+START FOOTER SECTION
+==============================================================
+*/
+#footer-section > .row {
+  min-height: 500px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  border-bottom: #cccccc solid 1px;
+}
+/* LEFT SIDE */
+#footer-section .row .left {
+  width: 33.33%;
+  float: left;
+}
+#footer-section .row .left > div {
+  margin: 20px 15px;
+}
+#footer-section .row .left p.logo {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  color: #cccccc;
+  font-size: 48px;
+}
+#footer-section .row .left .logo + div {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  color: #cccccc;
+}
+#footer-section .row .share .followers {
+  padding-bottom: 20px;
+  border-bottom: #cccccc solid 1px;
+}
+#footer-section .row .share .share-buttons {
+  margin: 20px 0;
+}
+#footer-section .row .share .share-buttons p {
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  float: left;
+  color: #cccccc;
+  margin-right: 20px;
+}
+#footer-section .row .share .share-buttons a {
+  margin-right: 10px;
+}
+#footer-section .row .share .subscribe {
+  margin: 50px 0;
+}
+#footer-section .row .share .subscribe input {
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  font-size: 15px;
+  width: 60%;
+  height: 35px;
+  color: #cccccc;
+  padding: 20px 15px;
+}
+#footer-section .row .share .subscribe button {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  background-color: #9bd6ce;
+  color: #ffffff;
+  width: 40%;
+  border: #cccccc solid 1px;
+  padding: 13px 20px;
+}
+#footer-section .row .share .subscribe button:hover,
+#footer-section .row .share .subscribe button:active {
+  border: #cccccc solid 1px;
+  outline: #9bd6ce solid 2px;
+  border-radius: 3px;
+  outline-offset: 1px;
+  cursor: pointer;
+}
+/* MIDDLE SIDE */
+#footer-section .middle {
+  width: 33.33%;
+  float: left;
+}
+#footer-section .middle .row .card {
+  width: 100%;
+  margin: 20px 0 0;
+}
+#footer-section .middle .row .card .card-header {
+  width: 40%;
+  min-height: unset;
+}
+#footer-section .middle .row .card .card-body {
+  width: 60%;
+}
+/* RIGHT SIDE */
+#footer-section .right {
+  width: 31%;
+  float: right;
+}
+#footer-section .right .instragram {
+  margin-top: 20px;
+}
+#footer-section .right .instragram img {
+  float: left;
+  margin-right: 2px;
+  margin-top: 2px;
+}
+#footer-section .footer {
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+#footer-section .footer a {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  color: red;
+  text-decoration: none;
+}
+/* 
+==============================================================
+                    END FOOTER SECTION
+==============================================================
+*/

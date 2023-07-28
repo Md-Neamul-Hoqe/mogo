@@ -1,0 +1,691 @@
+/*
+==============================================================
+                    GENERAL PROPERTIES
+==============================================================
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  min-width: 550px;
+  /* overflow: auto; */
+  background-color: #ffffff;
+  color: black;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+}
+.row{
+  margin-right: 0;
+  margin-left: 0;
+  padding-right: 0;
+  padding-left: 0;
+}
+.row > *{
+  margin-right: 0;
+  /* margin-left: 0; */
+  padding-right: 0;padding-left: 0;
+}
+.modal-backdrop{
+  z-index: 1029;
+}
+h3.header-subtitile,
+h3 {
+  text-transform: lowercase;
+  font-family: "Kaushan Script", cursive;
+  font-size: 24px;
+  color: #333333;
+}
+h3.header-subtitile::first-letter {
+  text-transform: uppercase;
+}
+h2 {
+  font-weight: 700 !important;
+  font-size: 30px;
+  color: #333333;
+}
+small {
+  color: #b3b3b3;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  line-height: 24px;
+}
+.card:not(#accordion .card) {
+  border: 0;
+}
+/* 
+==============================================================
+                    START HOME SECTION
+==============================================================
+*/
+#home-section {
+  background: #f38181 url("../images/home_banner.jpg") no-repeat;
+  background-size: cover;
+  color: white;
+}
+/* Navbar section */
+#home-section .container {
+  max-width: 66.666667%;
+}
+#home-section .navbar-brand {
+  font-weight: 700;
+  font-size: 30px;
+}
+.sticky-top {
+  scroll-behavior: smooth;
+}
+#home-section .navbar {
+  background-color: #f38181cc;
+}
+#home-section #mogo-navbar .navbar-nav .nav-link {
+  color: #fff;
+}
+#home-section #mogo-navbar .navbar-nav .nav-link {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+#home-section #mogo-navbar .navbar-nav .nav-item .nav-link:focus,
+#home-section #mogo-navbar .navbar-nav .nav-item .nav-link:hover,
+#home-section #mogo-navbar .navbar-nav .nav-item .nav-link:active {
+  color: #fce38a;
+  border-bottom: #fce38a solid 3px;
+}
+/* #home-section #mogo-navbar .navbar-nav .nav-item .nav-link::after{
+  content: '';
+  background-color: #fce38a;
+  width: 0%;
+  height: 2px;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+#home-section #mogo-navbar .navbar-nav .nav-item .nav-link:hover::after, #home-section #mogo-navbar .navbar-nav .nav-item .nav-link:active::after, #home-section #mogo-navbar .navbar-nav .nav-item .nav-link.active::after, #home-section #mogo-navbar .navbar-nav .nav-item .nav-link:focus::after{
+  width: 100%;
+} */
+.fa-,
+.fa-shopping-cart,
+.fa-search {
+  font-size: 14px;
+}
+/* HEADER TEXT */
+.header_text h3 {
+  color: #fff;
+  font-size: 72px;
+  text-transform: capitalize;
+}
+h1 {
+  font-weight: 700;
+  font-size: 150px;
+  line-height: 140px;
+  margin: 40px;
+  text-transform: uppercase;
+}
+.header_text button:hover {
+  background-color: #fff3;
+}
+/* SLIDER UNDER HOME SECTION */
+.carousel-indicators [data-bs-target]{
+  width: 24%;
+  text-indent: 0;
+}
+.carousel-indicators li {
+  width: 23%;
+  margin-bottom: 2%;
+  line-height: 300%;
+}
+.carousel-indicators li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+}
+.carousel-indicators li a span {
+  margin-right: 5px;
+  font-size: 24px;
+  font-weight: 700;
+}
+/* .carousel-indicators li:hover,
+.carousel-indicators li.active,
+.carousel-indicators li:focus {
+  border-top: #fff solid 3px;
+} */
+/* 
+==============================================================
+                    END HOME SECTION
+==============================================================
+*/
+/*
+==============================================================
+                    START ABOUT SECTION
+==============================================================
+*/
+/* ABOUT SECTION TEXT */
+#about-section > .row p,
+#services-section > .row p,
+#portfolio-section > .row p,
+#lblog-section > .row p,
+#contact-section > .row p {
+  color: #b3b3b3;
+}
+/* COUNTER SECTION */
+#about-section .counters {
+  min-height: 250px;
+  background-color: #95e1d3;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+#about-section .counters .counter {
+  width: 20%;
+  color: #fff;
+  height: 250px;
+  border: #b5eae0 solid 1px;
+  float: left;
+  text-align: center;
+  padding: 50px;
+}
+#about-section .counters .counter .number {
+  font-weight: 900;
+  font-size: 72px;
+}
+#about-section .counters .counter .counter-text {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+}
+/* 
+==============================================================
+                    END ABOUT SECTION
+==============================================================
+*/
+/* 
+==============================================================
+                    START SERVICE SECTION
+==============================================================
+*/
+.media {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+.media .media-body {
+  color: #b3b3b3;
+  font-family: "Roboto", sans-serif;
+  line-height: 24px;
+  font-weight: 300;
+}
+h6 {
+  color: #333333;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700 !important;
+  font-size: 14px !important;
+}
+.media + hr {
+  float: left;
+  clear: both;
+  margin: 50px 0;
+  width: 100%;
+  color: #e5e5e5;
+}
+/* 
+==============================================================
+                    END SERVICE SECTION
+==============================================================
+*/
+/* 
+==============================================================
+                    START BLOG SECTION
+==============================================================
+*/
+#blog-section {
+  background: url("../images/blog_banner.jpg") no-repeat;
+  background-size: cover;
+  position: relative;
+}
+#blog-section > .row {
+  margin-bottom: 0;
+}
+#blog-section > .row img:nth-child(4) {
+  width: 477px;
+}
+#blog-section > .row img:nth-child(5) {
+  width: 274px;
+  position: absolute;
+  left: 55%;
+  top: 50%;
+}
+/* 
+==============================================================
+                    END BLOG SECTION
+==============================================================
+*/
+/* 
+==============================================================
+                    START SERVICES SECTION
+==============================================================
+*/
+#services-section .card img {
+  border-radius: 0 !important;
+}
+/* SLIDER AREA */
+#slider1 {
+  color: #bdbdbd;
+}
+#slider1 .carousel-item {
+  background-color: #f8f8f8;
+}
+#slider1 .carousel-item img {
+  width: 60px;
+  height: 60px;
+}
+#slider1 p,
+#slider2 p {
+  width: 60%;
+}
+#slider1 cite,
+#slider2 cite {
+  font-family: "Kaushan Script", cursive;
+  color: #333333;
+}
+#slider1 cite::before,
+#slider2 cite::before {
+  margin-right: 5px;
+  content: url(../images/lineThrough-red.png);
+}
+#slider1 .carousel-control-prev,
+#slider1 .carousel-control-next,
+#slider2 .carousel-control-prev,
+#slider2 .carousel-control-next {
+  width: 16px;
+  color: #b3b3b3;
+}
+.control-prev,
+.control-next {
+  font-size: 18px;
+  font-weight: 700;
+  color: #b3b3b3;
+}
+/* 
+==============================================================
+                    END SERVICES SECTION
+==============================================================
+*/
+/* 
+==============================================================
+                    START CONTACT SECTION
+==============================================================
+*/
+#contact-section .card-title {
+  font-weight: normal;
+  font-size: 14px;
+}
+#contact-section .card-subtitle {
+  font-family: "Roboto", sans-serif;
+}
+/* 
+==============================================================
+                    END CONTACT SECTION
+==============================================================
+*/
+/* 
+==============================================================
+                    START PORTFOLIO SECTION
+==============================================================
+*/
+#portfolio-section {
+  background-color: #ffffff;
+}
+/* SLIDER EDITION */
+#slider2 .carousel-item {
+  background-color: #fff;
+}
+#portfolio-section #slider2 .carousel-item img {
+  width: 150px;
+  height: 150px;
+}
+#portfolio-section #slider-1 .slides .slide .sticker {
+  border: 0;
+  padding: 0;
+}
+
+/* CARD COLUMNS */
+#portfolio-section .card-columns {
+  -webkit-column-count: 4;
+  -moz-column-count: 4;
+  column-count: 4;
+  -webkit-column-gap: 0rem;
+  -moz-column-gap: 0rem;
+  column-gap: 0rem;
+  orphans: 1;
+  widows: 1;
+}
+#portfolio-section .card-columns .card {
+  width: 100%;
+}
+#portfolio-section .card-columns .card-body {
+  height: 390px;
+  padding: 0;
+}
+#portfolio-section .card-columns .card:nth-child(5) .card-body {
+  height: 780px;
+}
+/* 
+==============================================================
+                    END PORTFOLIO SECTION
+==============================================================
+*/
+/*
+==============================================================
+                    START COMMENT SECTION
+==============================================================
+*/
+#comment-section {
+  background: #fff url(../images/comment_banner.jpg) no-repeat;
+  background-size: cover;
+}
+/* 
+==============================================================
+END COMMENT SECTION
+==============================================================
+*/
+/* 
+==============================================================
+START LATEST BLOG SECTION
+==============================================================
+*/
+#lblog-section .card {
+  max-width: 390px;
+  height: auto;
+}
+#lblog-section .card .card-body + .card-text {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  line-height: 24px;
+}
+#lblog-section .card .card-body .card-text i::before {
+  color: #95e1d3;
+}
+
+#lblog-section .row:nth-child(2) {
+  background: #b3b3b3 url(../images/map-banner.png) no-repeat;
+  background-size: cover;
+}
+#lblog-section .row:nth-child(2) h2,
+#lblog-section .row:nth-child(2) .fas {
+  color: #f38181;
+}
+#lblog-section .row:nth-child(2) .fas {
+  font-size: 20px;
+}
+/* 
+==============================================================
+END LATEST BLOG SECTION
+==============================================================
+*/
+/* 
+==============================================================
+START FOOTER SECTION
+==============================================================
+*/
+.logo {
+  font-weight: bold;
+  color: #cccccc;
+  font-size: 48px;
+}
+.logo + div {
+  font-family: "Roboto", sans-serif;
+  color: #cccccc;
+}
+#footer-section .form-control,
+#footer-section .share .share-buttons p {
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  font-weight: 300;
+  color: #b3b3b3;
+}
+#footer-section .share .share-buttons a i.fa {
+  margin: 0 5px;
+  font-size: 14px;
+  line-height: 150%;
+  color: #95e1d3;
+}
+#footer-section .share .subscribe button {
+  font-style: normal;
+  font-weight: 700;
+  color: #fff;
+  background-color: #95e1d3;
+}
+/* RIGHT SIDE */
+.footer {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+.footer a {
+  color: #f38181;
+}
+/* 
+==============================================================
+                    END FOOTER SECTION
+==============================================================
+ */
+/* 
+==============================================================
+                    START MEDIA QUERY SECTION
+==============================================================
+*/
+/* FOR LEARGE DIVICES */
+@media screen and (max-width: 1399px) {
+  #home-section .container {
+    max-width: 83.333333%;
+  }
+  #about-section .counters .counter .number {
+    font-size: 48px;
+  }
+  #portfolio-section .card-columns .card-body {
+    height: 300px;
+  }
+  #portfolio-section .card-columns .card:nth-child(5) .card-body {
+    height: 600px;
+  }
+  #blog-section > .row img:nth-child(5) {
+    left: 58%;
+  }
+}
+/* FOR MEDIUM DIVICES */
+@media screen and (max-width: 1199px) {
+  #home-section .container {
+    max-width: 83.333333%;
+  }
+  h1 {
+    font-size: 120px;
+    line-height: 100px;
+  }
+  .header_text h3 {
+    font-size: 60px;
+  }
+}
+@media screen and (max-width: 991px) {
+  h1 {
+    font-size: 100px;
+    line-height: 100px;
+  }
+  .header_text h3 {
+    font-size: 36px;
+  }
+  #about-section .counters {
+    min-height: 200px;
+  }
+  #about-section .counters .counter {
+    height: 200px;
+    padding: 40px;
+  }
+  #about-section .counters .counter .number {
+    font-size: 36px;
+  }
+  #slider1 p,
+  #slider2 p {
+    width: 45%;
+  }
+  #blog-section > .row img:nth-child(5) {
+    left: 60%;
+  }
+}
+/* FOR SMALL DEVICES */
+@media screen and (max-width: 767px) {
+  #home-section .container {
+    max-width: 100%;
+  }
+  h1 {
+    font-size: 80px;
+    line-height: 80px;
+    margin: 30px;
+  }
+  h6{
+    font-size: 12px !important;
+  }
+  h3{
+    font-size: 20px;
+  }
+  h2{
+    font-size: 24px;
+  }
+  .logo{
+    font-size: 30px;
+  }
+  #about-section .counters {
+    min-height: 160px;
+  }
+  #about-section .counters .counter {
+    height: 160px;
+    padding: 30px;
+  }
+  #about-section .counters .counter .number {
+    font-size: 28px;
+  }
+  #about-section .counters .counter .counter-text {
+    font-size: 12px;
+  }
+  #portfolio-section .card-columns .card-body {
+    height: 200px;
+  }
+  #portfolio-section .card-columns .card:nth-child(5) .card-body {
+    height: 400px;
+  }
+  #blog-section > .row img:nth-child(4) {
+    width: 400px;
+  }
+  #blog-section > .row img:nth-child(5) {
+    width: 250px;
+  }
+  #contact-section > .row, #services-section > .row, #comment-section > .row, #lblog-section > .row, #footer-section > .row{
+    margin: auto 5px;
+  }
+  #comment-section .media > img {
+    width: 90px;
+    margin-right: 1rem;
+  }
+}
+
+/* FOR EXTRA SMALL DEVICES */
+@media screen and (max-width: 674px) {
+  #about-section .counters {
+    min-height: 150px;
+    background-color: #95e1d3;
+  }
+  #about-section .counters .counter {
+    height: 150px;
+    padding: 30px;
+  }
+  #about-section .counters .counter .number {
+    font-size: 24px;
+  }
+  #about-section .counters .counter .counter-text {
+    font-size: 10px;
+  }
+  #portfolio-section .card-columns {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+  }
+  #portfolio-section #slider2 .carousel-item img {
+    width: 100px;
+    height: 100px;
+  }
+  #blog-section > .row img:nth-child(4) {
+    width: 350px;
+  }
+  #blog-section > .row img:nth-child(5) {
+    width: 220px;
+    /* left: 60%; */
+  }
+  .slideIndecators li {
+    margin-left: 1%;
+    margin-right: 1%;
+    line-height: 200%;
+    padding: 5px 0px;
+  }
+  .slideIndecators > li > a {
+    font-size: 14px;
+  }
+  .slideIndecators li a span {
+    font-size: 20px;
+    font-weight: 700;
+  }
+}
+
+/* FOR EXTRA EXTRA SMALL DEVICES */
+@media screen and (max-width: 400px) {
+  .header_text h3 {
+    font-size: 26px;
+  }
+  h1 {
+    font-size: 50px;
+    line-height: 50px;
+    margin: 20px;
+  }
+  body {
+    font-size: 10px;
+  }
+  .slideIndecators li {
+    display: none;
+  }
+  #about-section .counters {
+    min-height: 100px;
+  }
+  #about-section .counters .counter {
+    height: 100px;
+    padding: 10px;
+  }
+  #about-section .counters .counter .number {
+    font-size: 20px;
+  }
+  #about-section .counters .counter .counter-text {
+    font-size: 8px;
+  }
+  #portfolio-section .card-columns {
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-count: 1;
+  }
+  #service-section .row .row .col{
+    min-width: 50%;
+  }
+  #blog-section > .row img:nth-child(4) {
+    width: 250px;
+  }
+  #blog-section > .row img:nth-child(5) {
+    width: 150px;
+    top: 60%;
+  }
+}
+/* 
+==============================================================
+                    END MEDIA QUERY SECTION
+==============================================================
+*/

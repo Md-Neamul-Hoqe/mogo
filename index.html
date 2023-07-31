@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>PSD to HTML || HTML5 || PS-6</title>
+  <title>MoGo PSD to HTML || HTML5 || PS-6</title>
   <!-- FavIcon -->
   <link rel="shortcut icon" href="./asset/images/logo_mogo.png" type="image/x-icon" />
 
@@ -17,13 +17,16 @@
     rel="stylesheet" />
 
   <!-- FONT AWESOME -->
-  <link rel="stylesheet" href="asset/css/all.css" />
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+  <!-- <link rel="stylesheet" href="./asset/css/all.css" /> -->
+  <script src="https://kit.fontawesome.com/d7b7563d24.js" crossorigin="anonymous"></script>
+  <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" /> -->
 
   <!-- Tailwind & Daisy UI CDN link -->
   <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="./css/daisyui.css">
+  <script src="./js/tailwindOflineCSS.js"></script>
 
   <!-- Customised Utilities-->
   <script>
@@ -47,102 +50,107 @@
 
 <body data-theme="light" class="font-montserrat min-w-[540px]">
   <!-- START HOME SECTION -->
-  <header id="home-section" class="bg-gradient-to-b from-[#f38181] to-[#fce38a] text-white">
-    <!-- Navigation bar  -->
-    <nav class="container sticky">
-      <div class="navbar">
-        <div class="navbar-start">
-          <a href="./index.html"><img src="./asset/images/logo_mogo.png" alt="logo" /></a>
-        </div>
-        <div class="navbar-end hidden lg:flex">
-          <ul class="space-x-10 menu-horizontal px-3 uppercase">
-            <li>
-              <a class="hover:border-b-4 active:border-b-4 pb-2 border-yellow-400 hover:text-yellow-400 active:text-yellow-400"
-                href="#about-section">about</a>
-            </li>
-            <li>
-              <a class="hover:border-b-4 active:border-b-4 pb-2 border-yellow-400 hover:text-yellow-400 active:text-yellow-400"
-                href="#service-section">serviece</a>
-            </li>
-            <li>
-              <a class="hover:border-b-4 active:border-b-4 pb-2 border-yellow-400 hover:text-yellow-400 active:text-yellow-400"
-                href="#service-section">work</a>
-            </li>
-            <li>
-              <a class="hover:border-b-4 active:border-b-4 pb-2 border-yellow-400 hover:text-yellow-400 active:text-yellow-400"
-                href="#blog-section">blog</a>
-            </li>
-            <li>
-              <a class="hover:border-b-4 active:border-b-4 pb-2 border-yellow-400 hover:text-yellow-400 active:text-yellow-400"
-                href="#contact-section">contact</a>
-            </li>
-          </ul>
-          <button class="btn btn-ghost btn-circle">
-            <div class="indicator">
-              <i class="fas fa-shopping-cart"></i>
-              <span class="badge badge-xs badge-primary indicator-item">8</span>
-            </div>
-          </button>
-          <button class="btn btn-ghost btn-circle">
-            <i class="fas fa-search"></i>
-          </button>
-        </div>
-        <div class="navbar-end lg:hidden">
-          <div class="dropdown dropdown-bottom dropdown-left">
-            <label tabindex="0" class="btn btn-ghost">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
-              </svg>
-            </label>
-            <ul tabindex="0"
-              class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 text-black rounded-box w-52">
-              <li><a href="#about-section">about</a></li>
-              <li><a href="#service-section">serviece</a></li>
-              <li><a href="#service-section">work</a></li>
-              <li><a href="#blog-section">blog</a></li>
-              <li><a href="#contact-section">contact</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </nav>
+  <header id="home-section" class="text-white">
+    <div class="bg-gradient-to-b from-[#f38181ee] to-[#fce38aee]">
 
-    <!-- Header Area Text with Button -->
-    <div class="container text-center">
-      <div class="flex flex-col items-center py-40 space-y-10">
-        <h3 class="font-kaushan-script text-7xl">Creative Template</h3>
-        <h1 class="text-9xl font-bold">Welcome<br />to MoGo</h1>
-        <hr class="bg-white h-1 w-24">
-        <a href="#" class="px-5 py-2 btn-danger border-4 rounded-none text-light bg-transparent font-bold text-sm">LEARN
-          MORE</a>
+      <!-- Navigation bar  -->
+      <nav class="container sticky">
+        <div class="navbar">
+          <div class="navbar-start">
+            <a href="./index.html"><img src="./asset/images/logo_mogo.png" alt="logo" /></a>
+          </div>
+          <div class="navbar-end hidden lg:flex">
+            <ul class="space-x-10 menu-horizontal px-3 uppercase">
+              <li>
+                <a class="hover:border-b-4 active:border-b-4 pb-2 border-yellow-400 hover:text-yellow-400 active:text-yellow-400"
+                  href="#about-section">about</a>
+              </li>
+              <li>
+                <a class="hover:border-b-4 active:border-b-4 pb-2 border-yellow-400 hover:text-yellow-400 active:text-yellow-400"
+                  href="#service-section">serviece</a>
+              </li>
+              <li>
+                <a class="hover:border-b-4 active:border-b-4 pb-2 border-yellow-400 hover:text-yellow-400 active:text-yellow-400"
+                  href="#service-section">work</a>
+              </li>
+              <li>
+                <a class="hover:border-b-4 active:border-b-4 pb-2 border-yellow-400 hover:text-yellow-400 active:text-yellow-400"
+                  href="#blog-section">blog</a>
+              </li>
+              <li>
+                <a class="hover:border-b-4 active:border-b-4 pb-2 border-yellow-400 hover:text-yellow-400 active:text-yellow-400"
+                  href="#contact-section">contact</a>
+              </li>
+            </ul>
+            <button class="btn btn-ghost btn-circle">
+              <div class="indicator">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="badge badge-xs badge-primary indicator-item">8</span>
+              </div>
+            </button>
+            <button class="btn btn-ghost btn-circle">
+              <i class="fas fa-search"></i>
+            </button>
+          </div>
+          <div class="navbar-end lg:hidden">
+            <div class="dropdown dropdown-bottom dropdown-left">
+              <label tabindex="0" class="btn btn-ghost">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+                </svg>
+              </label>
+              <ul tabindex="0"
+                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 text-black rounded-box w-52">
+                <li><a href="#about-section">about</a></li>
+                <li><a href="#service-section">serviece</a></li>
+                <li><a href="#service-section">work</a></li>
+                <li><a href="#blog-section">blog</a></li>
+                <li><a href="#contact-section">contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Header Area Text with Button -->
+      <div class="container text-center">
+        <div class="flex flex-col items-center py-40 space-y-10">
+          <h3 class="font-kaushan-script text-5xl md:text-6xl xl:text-7xl">Creative Template</h3>
+          <h1 class="text-7xl md:text-8xl xl:text-9xl font-bold">Welcome<br />to MoGo</h1>
+          <hr class="bg-white h-1 w-24">
+          <a href="#"
+            class="px-5 py-2 btn-danger border-4 rounded-none text-light bg-transparent font-bold text-sm">LEARN
+            MORE</a>
+        </div>
+        <div class="flex py-5">
+          <div class="opacity-50 hover:opacity-100 text-left w-full mr-2">
+            <div class="w-full h-[3px] bg-white">
+              <div class="animW0To100 w-1/3 h-[3px] bg-red-800"></div>
+            </div>
+            <a href="#" class="text-lg"><span class="font-bold pr-2 text-2xl">01</span>INTRO</a>
+          </div>
+          <div class="opacity-50 hover:opacity-100 text-left w-full mr-2">
+            <div class="w-full h-[3px] bg-white">
+              <div class="animW0To100 w-0 h-[3px] bg-red-800"></div>
+            </div>
+            <a href="#" class="text-lg"><span class="font-bold pr-2 text-2xl">02</span>WORK</a>
+          </div>
+          <div class="opacity-50 hover:opacity-100 text-left w-full mr-2">
+            <div class="w-full h-[3px] bg-white">
+              <div class="animW0To100 w-0 h-[3px] bg-red-800"></div>
+            </div>
+            <a href="#" class="text-lg"><span class="font-bold pr-2 text-2xl">03</span>ABOUT</a>
+          </div>
+          <div class="opacity-50 hover:opacity-100 text-left w-full mr-2">
+            <div class="w-full h-[3px] bg-white">
+              <div class="animW0To100 w-0 h-[3px] bg-red-800"></div>
+            </div>
+            <a href="#" class="text-lg"><span class="font-bold pr-2 text-2xl">04</span>CONTACT</a>
+          </div>
+        </div>
       </div>
-      <div class="flex py-5">
-        <div class="opacity-50 hover:opacity-100 text-left w-full mr-2">
-          <div class="w-full h-[3px] bg-white">
-            <div class="animW0To100 w-1/3 h-[3px] bg-red-800"></div>
-          </div>
-          <a href="#" class="text-lg"><span class="font-bold pr-2 text-2xl">01</span>INTRO</a>
-        </div>
-        <div class="opacity-50 hover:opacity-100 text-left w-full mr-2">
-          <div class="w-full h-[3px] bg-white">
-            <div class="animW0To100 w-0 h-[3px] bg-red-800"></div>
-          </div>
-          <a href="#" class="text-lg"><span class="font-bold pr-2 text-2xl">02</span>WORK</a>
-        </div>
-        <div class="opacity-50 hover:opacity-100 text-left w-full mr-2">
-          <div class="w-full h-[3px] bg-white">
-            <div class="animW0To100 w-0 h-[3px] bg-red-800"></div>
-          </div>
-          <a href="#" class="text-lg"><span class="font-bold pr-2 text-2xl">03</span>ABOUT</a>
-        </div>
-        <div class="opacity-50 hover:opacity-100 text-left w-full mr-2">
-          <div class="w-full h-[3px] bg-white">
-            <div class="animW0To100 w-0 h-[3px] bg-red-800"></div>
-          </div>
-          <a href="#" class="text-lg"><span class="font-bold pr-2 text-2xl">04</span>CONTACT</a>
-        </div>
-      </div>
+
     </div>
   </header>
   <!-- END HOME SECTION -->
@@ -151,89 +159,97 @@
     <div class="container flex flex-col items-center">
       <h3 class="font-kaushan-script text-2xl">What we do</h3>
       <h2 class="text-3xl font-bold my-3">STORY ABOUT US</h2>
-      <hr class="bg-[#f38181] h-1 w-24 my-7">
-      <p class="w-10/12 text-center mb-32">
+      <hr class="bg-[#f38181] h-1 w-16 my-7">
+      <p class="w-10/12 text-center mb-5 lg:mb-32">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
         eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
         minim veniam, quis nostrud exercitation ullamco laboris nisi ut
         aliquip ex ea commodo consequat.
       </p>
-      <div class="flex gap-3 flex-wrap justify-between">
-        <img src="asset/images/services_01.png" alt="services" />
-        <img src="asset/images/services_02.png" alt="services" />
-        <img src="asset/images/services_03.png" alt="services" />
-      </div>
-    </div>
-    <!-- Countdown -->
-    <!-- <div class="min-w-full bg-[#95e1d3]">
-      <div class="container">
-        <div class="flex text-center text-white">
-          <div class="flex flex-col items-center border-[1px] border-opacity-40 p-5 text-[8px] md:text-[10px] lg:text-sm w-1/5">
-            <span class="countdown font-bold mb-3 text-5xl md:text-6xl lg:text-7xl">
-              <span style="--value:42;"></span>
-            </span>
-            WEB&nbsp;DESIGN&nbsp;PROJECTS
+
+      <!-- Stories -->
+      <div class="flex flex-col md:flex-row justify-between gap-5">
+        <div class="card rounded-none justify-center items-center">
+          <figure class="rounded-none hoverEffect">
+            <img src="./asset/images/layer-grad-about.png" alt="Shoes"
+              class="w-full h-[250px] z-30 absolute left-0 top-0 opacity-0" />
+            <img src="./asset/images/lblog.png" alt="Shoes" class="w-full h-[250px] z-20 absolute left-0 top-0" />
+            <img src="./asset/images/layer-lime-about.png" alt="Shoes" class="w-full h-[250px] z-0" />
+          </figure>
+          <div class="hidden flex-col items-center gap-3 text-white absolute font-bold z-50 top-[100px] left-1/4">
+            <i class="fa fa-users"></i>
+            <h4>SUPPER TEAM</h4>
           </div>
-          <div class="flex flex-col items-center border-[1px] border-opacity-40 p-5 text-[8px] md:text-[10px] lg:text-sm w-1/5">
-            <span class="countdown font-bold mb-3 text-5xl md:text-6xl lg:text-7xl">
-              <span style="--value:10;"></span>
-            </span>
-            HAPPY&nbsp;CLIENT
+        </div>
+        <div class="card rounded-none">
+          <figure class="rounded-none hoverEffect">
+            <img src="./asset/images/layer-grad-about.png" alt="Shoes"
+              class="w-full h-[250px] z-30 absolute left-0 top-0 opacity-0" />
+            <img src="./asset/images/lblog.png" alt="Shoes" class="w-full h-[250px] z-20 absolute left-0 top-0" />
+            <img src="./asset/images/layer-lime-about.png" alt="Shoes" class="w-full h-[250px] z-0" />
+          </figure>
+          <div class="hidden flex-col items-center gap-3 text-white font-bold absolute z-50 top-[100px] left-1/4">
+            <i class="fa fa-users"></i>
+            <h4>SUPPER TEAM</h4>
           </div>
-          <div class="flex flex-col items-center border-[1px] border-opacity-40 p-5 text-[8px] md:text-[10px] lg:text-sm w-1/5">
-            <span class="countdown font-bold mb-3 text-5xl md:text-6xl lg:text-7xl">
-              <span style="--value:15;"></span>
-            </span>
-            AWARD&nbsp;WINNER
-          </div>
-          <div class="flex flex-col items-center border-[1px] border-opacity-40 p-5 text-[8px] md:text-[10px] lg:text-sm w-1/5">
-            <span class="countdown font-bold mb-3 text-5xl md:text-6xl lg:text-7xl">
-              <span style="--value:99;"></span>
-            </span>
-            CUP&nbsp;OF&nbsp;COFFEE
-          </div>
-          <div class="flex flex-col items-center border-[1px] border-opacity-40 p-5 text-[8px] md:text-[10px] lg:text-sm w-1/5">
-            <span class="countdown font-bold mb-3 text-5xl md:text-6xl lg:text-7xl">
-              <span style="--value:24;"></span>
-            </span>
-            MEMBERS
+        </div>
+        <div class="card rounded-none">
+          <figure class="rounded-none hoverEffect">
+            <img src="./asset/images/layer-grad-about.png" alt="Shoes"
+              class="w-full h-[250px] z-30 absolute left-0 top-0 opacity-0" />
+            <img src="./asset/images/lblog.png" alt="Shoes" class="w-full h-[250px] z-20 absolute left-0 top-0" />
+            <img src="./asset/images/layer-lime-about.png" alt="Shoes" class="w-full h-[250px] z-0" />
+          </figure>
+          <div class="hidden flex-col items-center gap-3 text-white font-bold absolute z-50 top-[100px] left-1/4 ">
+            <i class="fa fa-users"></i>
+            <h4>SUPPER TEAM</h4>
           </div>
         </div>
       </div>
-    </div> -->
-    <div class="stats shadow">
+    </div>
+    <!-- Countdown -->
+    <div class="min-w-full bg-[#95e1d3] mt-10 lg:mt-32">
+      <div class="container">
+        <div class="stats shadow rounded-none bg-transparent text-white grid-cols-5 min-w-full">
 
-      <div class="stat place-items-center">
-        <div class="stat-title">Downloads</div>
-        <div class="stat-value">31K</div>
-        <div class="stat-desc">From January 1st to February 1st</div>
+          <div class="stat place-items-center md:py-10 p-[1rem]">
+            <div class="stat-value text-5xl md:text-6xl lg:text-7xl">42</div>
+            <div class=" text-[8px] md:text-[10px] lg:text-sm stat-title text-white">WEB DESIGN PROJECTS</div>
+          </div>
+          <div class="stat place-items-center md:py-10 p-[1rem]">
+            <div class="stat-value text-5xl md:text-6xl lg:text-7xl">10</div>
+            <div class=" text-[8px] md:text-[10px] lg:text-sm stat-title text-white">HAPPY CLIENT</div>
+          </div>
+          <div class="stat place-items-center md:py-10 p-[1rem]">
+            <div class="stat-value text-5xl md:text-6xl lg:text-7xl">15</div>
+            <div class=" text-[8px] md:text-[10px] lg:text-sm stat-title text-white">AWARD WINNER</div>
+          </div>
+          <div class="stat place-items-center md:py-10 p-[1rem]">
+            <div class="stat-value text-5xl md:text-6xl lg:text-7xl">192</div>
+            <div class=" text-[8px] md:text-[10px] lg:text-sm stat-title text-white">CUP OF COFFEE</div>
+          </div>
+          <div class="stat place-items-center md:py-10 p-[1rem]">
+            <div class="stat-value text-5xl md:text-6xl lg:text-7xl">24</div>
+            <div class=" text-[8px] md:text-[10px] lg:text-sm stat-title text-white">MEMBERS</div>
+          </div>
+
+        </div>
       </div>
-
-      <div class="stat place-items-center">
-        <div class="stat-title">Users</div>
-        <div class="stat-value text-secondary">4,200</div>
-        <div class="stat-desc text-secondary">↗︎ 40 (2%)</div>
-      </div>
-
-      <div class="stat place-items-center">
-        <div class="stat-title">New Registers</div>
-        <div class="stat-value">1,200</div>
-        <div class="stat-desc">↘︎ 90 (14%)</div>
-      </div>
-
     </div>
   </section>
   <!-- END ABOUT SECTION -->
   <!-- START SERVICE SECTION -->
-  <section id="service-section" class="py-28">
+  <section id="service-section" class="p-5 md:py-28">
     <div class="container flex flex-col items-center">
-      <h3>We work with</h3>
-      <h2>AMAZING SERVICES</h2>
-      <hr class="bg-[#f38181] h-1 w-24 my-7">
+      <h3 class="font-kaushan-script text-2xl">We work with</h3>
+      <h2 class="text-3xl font-bold my-3">AMAZING SERVICES</h2>
+      <hr class="bg-[#f38181] h-1 w-16 my-7">
+
+      <!-- Services -->
       <div class="grid grid-flow-row grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
         <div class="flex">
           <figure>
-            <img class="w-14 mt-8" src="asset/images/alarm.png" alt="Alarm" />
+            <img class="w-14 mt-8" src="./asset/images/alarm.png" alt="Alarm" />
           </figure>
           <div class="ml-5 py-5">
             <div class="font-bold text-sm mb-5">PHOTOGRAPHY</div>
@@ -245,7 +261,7 @@
         </div>
         <div class="flex">
           <figure>
-            <img class="w-14 mt-8" src="asset/images/computer-ok.png" alt="Alarm" />
+            <img class="w-14 mt-8" src="./asset/images/computer-ok.png" alt="Alarm" />
           </figure>
           <div class="ml-5 py-5">
             <div class="font-bold text-sm mb-5">WEB DESIGN</div>
@@ -257,7 +273,7 @@
         </div>
         <div class="flex md:divide-y-2 lg:divide-y-0">
           <figure>
-            <img class="w-14 mt-8" src="asset/images/lineGraph.png" alt="Alarm" />
+            <img class="w-14 mt-8" src="./asset/images/lineGraph.png" alt="Alarm" />
           </figure>
           <div class="ml-5 py-5">
             <div class="font-bold text-sm mb-5">CREATIVITY</div>
@@ -269,7 +285,7 @@
         </div>
         <div class="flex md:divide-y-2 lg:divide-y-2">
           <figure>
-            <img class="w-14 mt-8" src="asset/images/books.png" alt="Alarm" />
+            <img class="w-14 mt-8" src="./asset/images/books.png" alt="Alarm" />
           </figure>
           <div class="ml-5 py-5">
             <div class="font-bold text-sm mb-5">SEO</div>
@@ -281,7 +297,7 @@
         </div>
         <div class="flex md:divide-y-2 lg:divide-y-2">
           <figure>
-            <img class="w-14 mt-8" src="asset/images/home.png" alt="Alarm" />
+            <img class="w-14 mt-8" src="./asset/images/home.png" alt="Alarm" />
           </figure>
           <div class="ml-5 py-5">
             <div class="font-bold text-sm mb-5">CSS/HTML</div>
@@ -293,7 +309,7 @@
         </div>
         <div class="flex md:divide-y-2 lg:divide-y-2">
           <figure>
-            <img class="w-14 mt-8" src="asset/images/imageFrame.png" alt="Alarm" />
+            <img class="w-14 mt-8" src="./asset/images/imageFrame.png" alt="Alarm" />
           </figure>
           <div class="ml-5 py-5">
             <div class="font-bold text-sm mb-5">DIGITAL</div>
@@ -308,78 +324,72 @@
   </section>
   <!-- END SERVICE SECTION -->
   <!-- START BLOG SECTION -->
-  <section id="blog-section" class="py-28 relative">
+  <section id="blog-section" class="py-28">
     <div class="container flex flex-col items-center">
       <h3 class="font-kaushan-script text-2xl">For all devices</h3>
       <h2 class="text-3xl font-bold my-3">UNIQUE DESIGN</h2>
-      <hr class="bg-[#f38181] h-1 w-24 my-7">
-      <img class="" src="./asset/images/display-bg-768x1024.png" alt="big display device" />
-      <img class="absolute bottom-0 right-52" src="asset/images/display-md-767.png" alt="md display" />
+      <hr class="bg-[#f38181] h-1 w-16 my-7">
+      <div class="relative w-6/12 md:w-auto">
+        <img class="" src="./asset/images/display-bg-768x1024.png" alt="big display device" />
+        <img class="w-2/3 md:w-auto absolute -bottom-14 -right-24 md:-bottom-28 md:-right-32" src="./asset/images/display-md-767.png" alt="md display" />
+      </div>
     </div>
   </section>
   <!-- END BLOG SECTION -->
   <!-- START SERVICES SECTION -->
   <section id="services-section">
-    <div class="row">
-      <h3>Service</h3>
-      <h2>What we do</h2>
-      <img src="asset/images/underLine_yellow.png" alt="lineThrough" class="lineThrough" />
-      <p class="row">
+    <div class="container flex flex-col items-center p-5 sm:py-28 sm:px-0">
+      <h3 class="font-kaushan-script text-2xl">Service</h3>
+      <h2 class="text-3xl font-bold my-3">WHAT WE DO</h2>
+      <hr class="bg-[#f38181] h-1 w-16 my-7">
+      <p class="w-10/12 text-center mb-32">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
         eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
         minim veniam, quis nostrud exercitation ullamco laboris nisi ut
         aliquip ex ea commodo consequat.
       </p>
-      <div class="row">
-        <div class="row">
-          <img src="asset/images/picture.png" alt="left" />
+      <div class="flex flex-col sm:flex-row gap-5 sm:gap-0">
+        <div class="flex-1">
+          <img src="./asset/images/picture.png" alt="left" />
         </div>
-        <div class="row">
-          <div id="accordion">
-            <div class="card">
-              <div class="title">
-                <img src="asset/images/pictureIcon.png" alt="accordion image" />
+
+        <!-- Accordion -->
+        <div class="flex-1">
+          <div id="accordion" class="space-y-3">
+            <div class="collapse collapse-arrow border rounded-none">
+              <input type="radio" name="my-accordion-2" checked="checked" />
+              <div class="collapse-title text-sm flex items-center gap-3">
+                <figure><img class="mr-2" src="./asset/images/pictureIcon.png" alt="accordion image" /></figure>
                 <h4>PHOTOGRAPHY</h4>
               </div>
-              <div class="body">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                irure dolor in reprehenderit in voluptate velit esse cillum
-                dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                cupidatat non proident, sunt in culpa qui officia deserunt
-                mollit anim id est laborum.
+              <div class="collapse-content border">
+                <p class="card-body font-roboto italic h-52 overflow-scroll text-gray-400">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                  irure dolor in reprehenderit in voluptate velit esse cillum
+                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                  cupidatat non proident, sunt in culpa qui officia deserunt
+                  mollit anim id est laborum.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                  irure dolor in reprehenderit in voluptate velit esse cillum
+                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                  cupidatat non proident, sunt in culpa qui officia deserunt
+                  mollit anim id est laborum.</p>
               </div>
             </div>
-            <!-- <div class="card">
-                <div class="title">
-                  <img
-                    src="asset/images/equalizer.png"
-                    alt="accordion image"
-                  />
-                  <h4>CREATIVITY</h4>
-                </div>
-                <div class="body">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                  irure dolor in reprehenderit in voluptate velit esse cillum
-                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                  cupidatat non proident, sunt in culpa qui officia deserunt
-                  mollit anim id est laborum.
-                </div>
+            <div class="collapse collapse-arrow border rounded-none gap-1">
+              <input type="radio" name="my-accordion-2" checked="checked" />
+              <div class="collapse-title text-sm flex items-center gap-3">
+                <figure><img src="./asset/images/equalizer.png" alt="accordion image" /></figure>
+                <h4>CREATIVITY</h4>
               </div>
-              <div class="card">
-                <div class="title">
-                  <img
-                    src="asset/images/bullseye.png"
-                    alt="accordion image"
-                  />
-                  <h4>WEB DESIGN</h4>
-                </div>
-                <div class="body">
+              <div class="collapse-content border">
+                <p class="card-body font-roboto italic h-52 overflow-scroll text-gray-400">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                   Ut enim ad minim veniam, quis nostrud exercitation ullamco
@@ -387,45 +397,128 @@
                   irure dolor in reprehenderit in voluptate velit esse cillum
                   dolore eu fugiat nulla pariatur. Excepteur sint occaecat
                   cupidatat non proident, sunt in culpa qui officia deserunt
-                  mollit anim id est laborum.
-                </div>
-              </div> -->
+                  mollit anim id est laborum.</p>
+              </div>
+            </div>
+            <div class="collapse collapse-arrow border rounded-none gap-1">
+              <input type="radio" name="my-accordion-2" checked="checked" />
+              <div class="collapse-title text-sm flex items-center gap-3">
+                <figure><img src="./asset/images/bullseye.png" alt="accordion image" /></figure>
+                <h4>WEB DESIGN</h4>
+              </div>
+              <div class="collapse-content border">
+                <p class="card-body font-roboto italic h-52 overflow-scroll text-gray-400">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                  irure dolor in reprehenderit in voluptate velit esse cillum
+                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                  cupidatat non proident, sunt in culpa qui officia deserunt
+                  mollit anim id est laborum.</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
+
     <!-- SLIDER -->
-    <div id="slider">
-      <div class="row">
-        <div class="slides">
-          <div class="slide">
-            <div class="sticker">
-              <img src="asset/images/speech.png" alt="speech" />
+    <div id="slider" class="min-w-full bg-slate-100">
+      <div class="container">
+        <div class="carousel w-full py-20">
+
+          <!-- Slide 1 -->
+          <div id="slide1" class="carousel-item relative w-full">
+            <div class="grid grid-flow-row sm:grid-flow-col text-justify sm:text-start gap-10 w-4/5 mx-auto">
+              <figure class="flex justify-center items-center">
+                <img src="./asset/images/speech.png" alt="speech" class="border-2 p-5 border-success" />
+              </figure>
+              <div>
+                <p class="font-roboto text-2xl italic text-gray-400">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation.
+                </p>
+                <cite class="flex items-center gap-5 font-kaushan-script text-2xl">
+                  <hr class="bg-[#f38181] h-1 w-16 my-7"> Jon Doe
+                </cite>
+              </div>
             </div>
-            <div class="speech">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Ut enim ad minim veniam, quis nostrud exercitation.
-              </p>
-              <cite>Jon Doe</cite>
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide4" class="btn btn-circle text-2xl text-gray-500">❮</a>
+              <a href="#slide2" class="btn btn-circle text-2xl text-gray-500">❯</a>
             </div>
           </div>
-          <div class="slide">
-            <div class="sticker">
-              <img src="asset/images/speech.png" alt="speech" />
+
+          <!-- Slide 2 -->
+          <div id="slide2" class="carousel-item relative w-full">
+            <div class="grid grid-flow-row sm:grid-flow-col text-justify sm:text-start gap-10 w-4/5 mx-auto">
+              <figure class="flex justify-center items-center">
+                <img src="./asset/images/speech.png" alt="speech" class="border-2 p-5 border-success" />
+              </figure>
+              <div>
+                <p class="font-roboto text-2xl italic text-gray-400">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation.
+                </p>
+                <cite class="flex items-center gap-5 font-kaushan-script text-2xl">
+                  <hr class="bg-[#f38181] h-1 w-16 my-7"> Jon Doe
+                </cite>
+              </div>
             </div>
-            <div class="speech">
-              “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation.”
-              <cite>Jon Doe</cite>
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide1" class="btn btn-circle text-2xl text-gray-500">❮</a>
+              <a href="#slide3" class="btn btn-circle text-2xl text-gray-500">❯</a>
             </div>
           </div>
-        </div>
-        <div id="sliderIndecators">
-          <a href="#" class="left">&LT;</a>
-          <a href="#" class="right">&GT;</a>
+
+          <!-- Slide 3 -->
+          <div id="slide3" class="carousel-item relative w-full">
+            <div class="grid grid-flow-row sm:grid-flow-col text-justify sm:text-start gap-10 w-4/5 mx-auto">
+              <figure class="flex justify-center items-center">
+                <img src="./asset/images/speech.png" alt="speech" class="border-2 p-5 border-success" />
+              </figure>
+              <div>
+                <p class="font-roboto text-2xl italic text-gray-400">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation.
+                </p>
+                <cite class="flex items-center gap-5 font-kaushan-script text-2xl">
+                  <hr class="bg-[#f38181] h-1 w-16 my-7"> Jon Doe
+                </cite>
+              </div>
+            </div>
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide2" class="btn btn-circle text-2xl text-gray-500">❮</a>
+              <a href="#slide4" class="btn btn-circle text-2xl text-gray-500">❯</a>
+            </div>
+          </div>
+
+          <!-- Slide 4 -->
+          <div id="slide4" class="carousel-item relative w-full">
+            <div class="grid grid-flow-row sm:grid-flow-col text-justify sm:text-start gap-10 w-4/5 mx-auto">
+              <figure class="flex justify-center items-center">
+                <img src="./asset/images/speech.png" alt="speech" class="border-2 p-5 border-success" />
+              </figure>
+              <div>
+                <p class="font-roboto text-2xl italic text-gray-400">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation.
+                </p>
+                <cite class="flex items-center gap-5 font-kaushan-script text-2xl">
+                  <hr class="bg-[#f38181] h-1 w-16 my-7"> Jon Doe
+                </cite>
+              </div>
+            </div>
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide3" class="btn btn-circle text-2xl text-gray-500">❮</a>
+              <a href="#slide1" class="btn btn-circle text-2xl text-gray-500">❯</a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -433,108 +526,295 @@
   <!-- END SERVICES SECTION -->
   <!-- START CONTANT SECTION -->
   <section id="contact-section">
-    <div class="row">
-      <h3>Who we are</h3>
-      <h2>MEET OUR TEAM</h2>
-      <img src="asset/images/underLine_yellow.png" alt="lineThrough" class="lineThrough" />
-      <p class="row">
+    <div class="container flex flex-col items-center py-28">
+      <h3 class="font-kaushan-script text-2xl">Who we are</h3>
+      <h2 class="text-3xl font-bold my-3">MEET OUR TEAM</h2>
+      <hr class="bg-[#f38181] h-1 w-16 my-7">
+      <p class="w-10/12 text-center mb-5 sm:mb-32">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
         eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
         minim veniam, quis nostrud exercitation ullamco laboris nisi ut
         aliquip ex ea commodo consequat.
       </p>
-      <div class="row services">
-        <div>
-          <img src="asset/images/layer-contacts.png" alt="services" />
-          <div class="name">MATTHEW DIX</div>
-          <div class="fame">Graphic Design</div>
+      <div class="flex flex-col sm:flex-row justify-between gap-5">
+        <div class="card rounded-none">
+          <figure class="rounded-none hoverEffect">
+            <img src="./asset/images/layer-grad-contacts.png" alt="Shoes"
+              class="w-full z-30 absolute left-0 top-0 opacity-0" />
+            <img src="./asset/images/layer-contacts-02.png" alt="Shoes" class="w-full z-20 absolute left-0 top-0" />
+            <img src="./asset/images/layer-lime-contacts.png" alt="Shoes" class="w-full z-0" />
+          </figure>
+          <div class="h-10 absolute top-1/4 left-1/4 z-50 hover:flex hidden hover:bg-red-800">
+            <a class="border-yellow-100 bg-yellow-400 text-red-800 active:bg-opacity-20 active:text-white flex justify-center items-center px-3"
+              href="#"><i class="fa fa fa-facebook-f"></i></a>
+            <a class="border-yellow-100 bg-yellow-400 text-red-800 active:bg-opacity-20 active:text-white flex justify-center items-center px-3"
+              href="#"><i class="fa fa fa-twitter"></i></a>
+            <a class="border-yellow-100 bg-yellow-400 text-red-800 active:bg-opacity-20 active:text-white flex justify-center items-center px-3"
+              href="#"><i class="fa fa fa-facebook-f"></i></a>
+            <a class="border-yellow-100 bg-yellow-400 text-red-800 active:bg-opacity-20 active:text-white flex justify-center items-center px-3"
+              href="#"><i class="fa fa fa-facebook-f"></i></a>
+          </div>
+          <div class="card-body items-center justify-center text-center">
+            <h2 class="card-title min-w-max">MATTHEW DIX</h2>
+            <p>Graphic Design</p>
+          </div>
         </div>
-        <div>
-          <img src="asset/images/layer-contacts-02.png" alt="services" />
-          <div class="name">MATTHEW DIX</div>
-          <div class="fame">Graphic Design</div>
+        <div class="card rounded-none">
+          <figure class="rounded-none hoverEffect">
+            <img src="./asset/images/layer-grad-contacts.png" alt="Shoes"
+              class="w-full z-30 absolute left-0 top-0 opacity-0" />
+            <img src="./asset/images/layer-contacts-02.png" alt="Shoes" class="w-full z-20 absolute left-0 top-0" />
+            <img src="./asset/images/layer-lime-contacts.png" alt="Shoes" class="w-full z-0" />
+          </figure>
+          <div class="h-10 absolute top-1/4 left-1/4 z-50 hover:flex hidden hover:bg-red-800">
+            <a class="border-yellow-100 bg-yellow-400 text-red-800 hover:bg-opacity-20 hover:text-white flex justify-center items-center px-3"
+              href="#"><i class="fa fa fa-facebook-f"></i></a>
+            <a class="border-yellow-100 bg-yellow-400 text-red-800 hover:bg-opacity-20 hover:text-white flex justify-center items-center px-3"
+              href="#"><i class="fa fa fa-twitter"></i></a>
+            <a class="border-yellow-100 bg-yellow-400 text-red-800 hover:bg-opacity-20 hover:text-white flex justify-center items-center px-3"
+              href="#"><i class="fa fa fa-facebook-f"></i></a>
+            <a class="border-yellow-100 bg-yellow-400 text-red-800 hover:bg-opacity-20 hover:text-white flex justify-center items-center px-3"
+              href="#"><i class="fa fa fa-facebook-f"></i></a>
+          </div>
+          <div class="card-body items-center justify-center text-center">
+            <h2 class="card-title min-w-max">MATTHEW DIX</h2>
+            <p>Graphic Design</p>
+          </div>
         </div>
-        <div>
-          <img src="asset/images/layer-contacts.png" alt="services" />
-          <div class="name">MATTHEW DIX</div>
-          <div class="fame">Graphic Design</div>
+        <div class="card rounded-none">
+          <figure class="rounded-none hoverEffect">
+            <img src="./asset/images/layer-grad-contacts.png" alt="Shoes"
+              class="w-full z-30 absolute left-0 top-0 opacity-0" />
+            <img src="./asset/images/layer-contacts-02.png" alt="Shoes" class="w-full z-20 absolute left-0 top-0" />
+            <img src="./asset/images/layer-lime-contacts.png" alt="Shoes" class="w-full z-0" />
+          </figure>
+          <div class="h-10 absolute top-1/4 left-1/4 z-50 hover:flex hidden hover:bg-red-800">
+            <a class="border-yellow-100 bg-yellow-400 text-red-800 active:bg-opacity-20 active:text-white flex justify-center items-center px-3"
+              href="#"><i class="fa fa fa-facebook-f"></i></a>
+            <a class="border-yellow-100 bg-yellow-400 text-red-800 active:bg-opacity-20 active:text-white flex justify-center items-center px-3"
+              href="#"><i class="fa fa fa-twitter"></i></a>
+            <a class="border-yellow-100 bg-yellow-400 text-red-800 active:bg-opacity-20 active:text-white flex justify-center items-center px-3"
+              href="#"><i class="fa fa fa-facebook-f"></i></a>
+            <a class="border-yellow-100 bg-yellow-400 text-red-800 active:bg-opacity-20 active:text-white flex justify-center items-center px-3"
+              href="#"><i class="fa fa fa-facebook-f"></i></a>
+          </div>
+          <div class="card-body items-center justify-center text-center">
+            <h2 class="card-title min-w-max">MATTHEW DIX</h2>
+            <p>Graphic Design</p>
+          </div>
         </div>
       </div>
     </div>
-    <div class="categories">
-      <div class="row">
-        <div><img src="asset/images/icons.png" alt="categories" /></div>
+    <div class="categories bg-gray-100 py-10">
+      <div class="container">
+        <div><img class="w-full" src="./asset/images/icons.png" alt="categories" /></div>
       </div>
     </div>
   </section>
   <!-- END CONTACT SECTION -->
   <!-- START PORTFOLIO SECTION -->
-  <section id="portfolio-section">
-    <div class="row">
-      <h3>What we do</h3>
-      <h2>SOME OF OUR WORKS</h2>
-      <img src="asset/images/underLine_yellow.png" alt="lineThrough" class="lineThrough" />
-      <p class="row">
+  <section id="portfolio-section" class="pt-16">
+    <div class="container flex flex-col items-center">
+      <h3 class="font-kaushan-script text-2xl">What we do</h3>
+      <h2 class="text-3xl font-bold my-3">SOME OF OUR WORKS</h2>
+      <hr class="bg-[#f38181] h-1 w-16 my-7">
+      <p class="w-10/12 text-center mb-16">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
         eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
         minim veniam, quis nostrud exercitation ullamco laboris nisi ut
         aliquip ex ea commodo consequat.
       </p>
     </div>
-    <div class="portfolios">
-      <div class="img">
-        <img src="asset/images/pictures-02.png" alt="portfolio" />
-      </div>
-      <div class="img">
-        <img src="asset/images/pictures-04.png" alt="portfolio" />
-      </div>
-      <div class="img">
-        <img src="asset/images/pictures-03.png" alt="portfolio" />
-      </div>
-      <div class="img">
-        <img src="asset/images/pictures-02.png" alt="portfolio" />
-      </div>
-      <div class="img">
-        <img src="asset/images/pictures-04.png" alt="portfolio" />
-      </div>
-      <div class="img">
-        <img src="asset/images/pictures-02.png" alt="portfolio" />
-      </div>
-      <div class="img">
-        <img src="asset/images/pictures-04.png" alt="portfolio" />
-      </div>
-    </div>
-    <div id="slider-1">
-      <div class="row">
-        <div class="slides">
-          <div class="slide">
-            <div class="sticker">
-              <img src="asset/images/picture-circle-01.png" speech" />
-            </div>
-            <div class="speech">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Ut enim ad minim veniam, quis nostrud exercitation.
-              </p>
-              <cite>Jon Doe</cite>
-            </div>
-          </div>
-          <div class="slide">
-            <div class="sticker">
-              <img src="asset/images/picture-circle-01.png" alt="speech" />
-            </div>
-            <div class="speech">
-              “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation.”
-              <cite>Jon Doe</cite>
-            </div>
+    <div class="grid grid-cols-4 gap-0">
+      <div>
+        <img class="min-h-full w-full" src="./asset/images/pictures-02.png" title="02" alt="portfolio" />
+        <div class="card image-full h-full bg-opacity-0">
+          <figure>
+            <img class="w-full rounded-none" src="./asset/images/pictures-02.png" alt="Works" />
+          </figure>
+          <div class="card-body justify-center items-center text-center text-white">
+            <i class="fa fa-2x fa-image"></i>
+            <h2 class="card-title text-sm">CREATIVLY DESIGNED</h2>
+            <p class="font-roboto italic flex-grow-0">If a dog chews shoes whose shoes does he choose?</p>
           </div>
         </div>
-        <div id="sliderIndecators">
-          <a href="#" class="left">&LT;</a>
-          <a href="#" class="right">&GT;</a>
+      </div>
+      <div>
+        <img class="min-h-full w-full" src="./asset/images/pictures-04.png" title="04" alt="portfolio" />
+        <div class="card image-full h-full bg-opacity-0">
+          <figure>
+            <img class="w-full rounded-none" src="./asset/images/pictures-04.png" alt="Works" />
+          </figure>
+          <div class="card-body justify-center items-center text-center text-white">
+            <i class="fa fa-2x fa-image"></i>
+            <h2 class="card-title text-sm">CREATIVLY DESIGNED</h2>
+            <p class="font-roboto italic flex-grow-0">If a dog chews shoes whose shoes does he choose?</p>
+          </div>
+        </div>
+      </div>
+      <div class="row-span-2">
+        <img class="min-h-full w-full" src="./asset/images/pictures-03.png" title="03" alt="portfolio" />
+        <div class="card image-full h-full bg-opacity-0">
+          <figure>
+            <img class="w-full rounded-none" src="./asset/images/pictures-03.png" alt="Works" />
+          </figure>
+          <div class="card-body justify-center items-center text-center text-white">
+            <i class="fa fa-2x fa-image"></i>
+            <h2 class="card-title text-sm">CREATIVLY DESIGNED</h2>
+            <p class="font-roboto italic flex-grow-0">If a dog chews shoes whose shoes does he choose?</p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <img class="min-h-full w-full" src="./asset/images/pictures-02.png" title="02" alt="portfolio" />
+        <div class="card image-full h-full bg-opacity-0">
+          <figure>
+            <img class="w-full rounded-none" src="./asset/images/pictures-02.png" alt="Works" />
+          </figure>
+          <div class="card-body justify-center items-center text-center text-white">
+            <i class="fa fa-2x fa-image"></i>
+            <h2 class="card-title text-sm">CREATIVLY DESIGNED</h2>
+            <p class="font-roboto italic flex-grow-0">If a dog chews shoes whose shoes does he choose?</p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <img class="min-h-full w-full" src="./asset/images/pictures-04.png" title="04" alt="portfolio" />
+        <div class="card image-full h-full bg-opacity-0">
+          <figure>
+            <img class="w-full rounded-none" src="./asset/images/pictures-04.png" alt="Works" />
+          </figure>
+          <div class="card-body justify-center items-center text-center text-white">
+            <i class="fa fa-2x fa-image"></i>
+            <h2 class="card-title text-sm">CREATIVLY DESIGNED</h2>
+            <p class="font-roboto italic flex-grow-0">If a dog chews shoes whose shoes does he choose?</p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <img class="min-h-full w-full" src="./asset/images/pictures-02.png" title="02" alt="portfolio" />
+        <div class="card image-full h-full bg-opacity-0">
+          <figure>
+            <img class="w-full rounded-none" src="./asset/images/pictures-02.png" alt="Works" />
+          </figure>
+          <div class="card-body justify-center items-center text-center text-white">
+            <i class="fa fa-2x fa-image"></i>
+            <h2 class="card-title text-sm">CREATIVLY DESIGNED</h2>
+            <p class="font-roboto italic flex-grow-0">If a dog chews shoes whose shoes does he choose?</p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <img class="min-h-full w-full" src="./asset/images/pictures-04.png" title="04" alt="portfolio" />
+        <div class="card image-full h-full bg-opacity-0">
+          <figure>
+            <img class="w-full rounded-none" src="./asset/images/pictures-04.png" alt="Works" />
+          </figure>
+          <div class="card-body justify-center items-center text-center text-white">
+            <i class="fa fa-2x fa-image"></i>
+            <h2 class="card-title text-sm">CREATIVLY DESIGNED</h2>
+            <p class="font-roboto italic flex-grow-0">If a dog chews shoes whose shoes does he choose?</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SLIDER -->
+    <div id="slider-1" class="min-w-full bg-slate-100">
+      <div class="container">
+        <div class="carousel w-full py-32">
+
+          <!-- Slide 1 -->
+          <div id="slide-1" class="carousel-item relative w-full">
+            <div class="grid grid-flow-row sm:grid-flow-col text-justify sm:text-start gap-10 w-4/5 mx-auto">
+              <figure class="flex justify-center items-center">
+                <img src="./asset/images/picture-circle-01.png" alt="speech" />
+              </figure>
+              <div>
+                <p class="font-roboto text-2xl italic text-gray-400">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation.
+                </p>
+                <cite class="flex items-center gap-5 font-kaushan-script text-2xl">
+                  <hr class="bg-[#f38181] h-1 w-16 my-7"> Jon Doe
+                </cite>
+              </div>
+            </div>
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide-4" class="btn btn-circle text-2xl text-gray-500">❮</a>
+              <a href="#slide-2" class="btn btn-circle text-2xl text-gray-500">❯</a>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div id="slide-2" class="carousel-item relative w-full">
+            <div class="grid grid-flow-row sm:grid-flow-col text-justify sm:text-start gap-10 w-4/5 mx-auto">
+              <figure class="flex justify-center items-center">
+                <img src="./asset/images/picture-circle-01.png" alt="speech" />
+              </figure>
+              <div>
+                <p class="font-roboto text-2xl italic text-gray-400">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation.
+                </p>
+                <cite class="flex items-center gap-5 font-kaushan-script text-2xl">
+                  <hr class="bg-[#f38181] h-1 w-16 my-7"> Jon Doe
+                </cite>
+              </div>
+            </div>
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide-1" class="btn btn-circle text-2xl text-gray-500">❮</a>
+              <a href="#slide-3" class="btn btn-circle text-2xl text-gray-500">❯</a>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div id="slide-3" class="carousel-item relative w-full">
+            <div class="grid grid-flow-row sm:grid-flow-col text-justify sm:text-start gap-10 w-4/5 mx-auto">
+              <figure class="flex justify-center items-center">
+                <img src="./asset/images/picture-circle-01.png" alt="speech" />
+              </figure>
+              <div>
+                <p class="font-roboto text-2xl italic text-gray-400">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation.
+                </p>
+                <cite class="flex items-center gap-5 font-kaushan-script text-2xl">
+                  <hr class="bg-[#f38181] h-1 w-16 my-7"> Jon Doe
+                </cite>
+              </div>
+            </div>
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide-2" class="btn btn-circle text-2xl text-gray-500">❮</a>
+              <a href="#slide-4" class="btn btn-circle text-2xl text-gray-500">❯</a>
+            </div>
+          </div>
+
+          <!-- Slide 4 -->
+          <div id="slide-4" class="carousel-item relative w-full">
+            <div class="grid grid-flow-row sm:grid-flow-col text-justify sm:text-start gap-10 w-4/5 mx-auto">
+              <figure class="flex justify-center items-center">
+                <img src="./asset/images/picture-circle-01.png" alt="speech" />
+              </figure>
+              <div>
+                <p class="font-roboto text-2xl italic text-gray-400">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation.
+                </p>
+                <cite class="flex items-center gap-5 font-kaushan-script text-2xl">
+                  <hr class="bg-[#f38181] h-1 w-16 my-7"> Jon Doe
+                </cite>
+              </div>
+            </div>
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide-3" class="btn btn-circle text-2xl text-gray-500">❮</a>
+              <a href="#slide-1" class="btn btn-circle text-2xl text-gray-500">❯</a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -542,76 +822,78 @@
   <!-- END PORTFOLIO SECTION -->
   <!-- START COMMENT SECTION -->
   <section id="comment-section">
-    <div class="row">
-      <h3>We work with</h3>
-      <h2>AMAZING SERVICES</h2>
-      <img src="asset/images/underLine_yellow.png" alt="lineThrough" class="lineThrough" />
-      <div class="row">
-        <div class="card">
-          <div class="card-header">
-            <img src="asset/images/picture-circle-02.png" alt="Alarm" />
-          </div>
-          <div class="card-body">
-            <div class="card-title">
-              <h4>MATTHEW DIX</h4>
-              <small>Graphic Design</small>
-              <img src="asset/images/underLine_yellow.png" alt="lineThrough" />
+    <div class="bg-gray-200/75">
+      <div class="container flex flex-col items-center py-28">
+        <h3 class="font-kaushan-script text-2xl">Happy Client</h3>
+        <h2 class="text-3xl font-bold my-3">WHAT PEOPLE SAY</h2>
+        <hr class="bg-[#f38181] h-1 w-16 my-7">
+        <div class="grid grid-flow-row sm:grid-flow-col sm:grid-cols-2 sm:grid-rows-2 grid-cols-1 mx-5 sm:mx-auto">
+          <div class="card card-side">
+            <figure class="min-w-max">
+              <img src="./asset/images/picture-circle-02.png" alt="Alarm" />
+            </figure>
+            <div class="card-body">
+              <div class="card-title flex flex-col items-start">
+                <h4>MATTHEW DIX</h4>
+                <small class="font-roboto text-gray-400 italic">Graphic Design</small>
+                <hr class="bg-[#f38181] h-1 w-16 my-3">
+              </div>
+              <p class="font-roboto text-gray-400 sm:w-8/12 xl:w-11/12">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor.
+              </p>
             </div>
-            <p class="card-text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor.
-            </p>
           </div>
-        </div>
-        <div class="card">
-          <div class="card-header">
-            <img src="asset/images/picture-circle-02.png" alt="Alarm" />
-          </div>
-          <div class="card-body">
-            <div class="card-title">
-              <h4>MATTHEW DIX</h4>
-              <small>Graphic Design</small>
-              <img src="asset/images/underLine_yellow.png" alt="lineThrough" />
-            </div>
+          <div class="card card-side">
+            <figure class="min-w-max">
+              <img src="./asset/images/picture-circle-02.png" alt="Alarm" />
+            </figure>
+            <div class="card-body">
+              <div class="card-title flex flex-col items-start">
+                <h4>MATTHEW DIX</h4>
+                <small class="font-roboto text-gray-400 italic">Graphic Design</small>
+                <hr class="bg-[#f38181] h-1 w-16 my-3">
+              </div>
 
-            <p class="card-text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor.
-            </p>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-header">
-            <img src="asset/images/picture-circle-02.png" alt="Alarm" />
-          </div>
-          <div class="card-body">
-            <div class="card-title">
-              <h4>JAELYNN CASTILLO</h4>
-              <small>Graphic Design</small>
-              <img src="asset/images/underLine_yellow.png" alt="lineThrough" />
+              <p class="font-roboto text-gray-400 sm:w-8/12 xl:w-11/12">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor.
+              </p>
             </div>
+          </div>
+          <div class="card card-side">
+            <figure class="min-w-max">
+              <img src="./asset/images/picture-circle-02.png" alt="Alarm" />
+            </figure>
+            <div class="card-body">
+              <div class="card-title flex flex-col items-start">
+                <h4>JAELYNN CASTILLO</h4>
+                <small class="font-roboto text-gray-400 italic">Graphic Design</small>
+                <hr class="bg-[#f38181] h-1 w-16 my-3">
+              </div>
 
-            <p class="card-text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor.
-            </p>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-header">
-            <img src="asset/images/picture-circle-02.png" alt="Alarm" />
-          </div>
-          <div class="card-body">
-            <div class="card-title">
-              <h4>MATTHEW DIX</h4>
-              <small>Graphic Design</small>
-              <img src="asset/images/underLine_yellow.png" alt="lineThrough" />
+              <p class="font-roboto text-gray-400 sm:w-8/12 xl:w-11/12">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor.
+              </p>
             </div>
+          </div>
+          <div class="card card-side">
+            <figure class="min-w-max">
+              <img src="./asset/images/picture-circle-02.png" alt="Alarm" />
+            </figure>
+            <div class="card-body">
+              <div class="card-title flex flex-col items-start">
+                <h4>MATTHEW DIX</h4>
+                <small class="font-roboto text-gray-400 italic">Graphic Design</small>
+                <hr class="bg-[#f38181] h-1 w-16 my-3">
+              </div>
 
-            <p class="card-text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor.
-            </p>
+              <p class="font-roboto text-gray-400 sm:w-8/12 xl:w-11/12">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor.
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -620,78 +902,88 @@
   <!-- END COMMENT SECTION -->
   <!-- START LATEST BLOG SECTION -->
   <section id="lblog-section">
-    <div class="row">
-      <h3>Who we are</h3>
-      <h2>MEET OUR TEAM</h2>
-      <img src="asset/images/underLine_yellow.png" alt="lineThrough" class="lineThrough" />
-      <p class="row">
+    <div class="container flex flex-col items-center py-28">
+      <h3 class="font-kaushan-script text-2xl">Our Stories</h3>
+      <h2 class="text-3xl font-bold my-3">LATEST BLOG</h2>
+      <hr class="bg-[#f38181] h-1 w-16 my-7">
+      <p class="w-10/12 text-center mb-32">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
         eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
         minim veniam, quis nostrud exercitation ullamco laboris nisi ut
         aliquip ex ea commodo consequat.
       </p>
-      <div class="row services">
-        <div>
-          <img src="asset/images/layer-contacts.png" alt="services" />
-          <div>
-            <div class="name">MATTHEW DIX</div>
-            <div class="comment">
-              <p>
-                Elit, sed do eiusmod tempor incididunt ut labore et dolore
-                magna aliqua.
-              </p>
-              <div class="views-comment">
-                <img src="asset/images/eye.png" alt="" /><i> 1560 </i>
-                <img src="asset/images/speech-bubbols.png" alt="message" /><i>
-                  98</i>
+      <div class="flex justify-between flex-col xl:flex-row">
+        <div class="card rounded-none">
+          <figure class="rounded-none indicator">
+            <div class="indicator">
+              <div
+                class="w-20 h-24 text-white flex flex-col items-center justify-center bg-[#95E1D3] indicator-item indicator-middle indicator-start ml-10 mt-10">
+                <h3 class="text-5xl font-bold">14</h3>
+                <h6 class="font-roboto italic block">Jan</h6>
               </div>
+              <img src="./asset/images/lblog.png" alt="Shoes" class="w-full px-8" />
+            </div>
+          </figure>
+          <div class="card-body items-start w-full">
+            <h2>incididunt ut labore et dolore</h2>
+            <p class="text-gray-400 font-roboto">Elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+              aliqua.</p>
+            <hr class="w-full bg-gray-400 my-5">
+            <div class="flex gap-3 text-gray-400 items-center">
+              <i class="fa fa-eye text-[#95E1D3]"></i> 1560 <i class="fa fa-comment-dots text-[#95E1D3]"></i> 98
             </div>
           </div>
         </div>
-        <div>
-          <img src="asset/images/layer-contacts-02.png" alt="services" />
-          <div>
-            <div class="name">MATTHEW DIX</div>
-            <div class="comment">
-              <p>
-                Elit, sed do eiusmod tempor incididunt ut labore et dolore
-                magna aliqua.
-              </p>
-              <div class="views-comment">
-                <img src="asset/images/eye.png" alt="" /><i> 1560 </i>
-                <img src="asset/images/speech-bubbols.png" alt="message" /><i>
-                  98</i>
+        <div class="card rounded-none">
+          <figure class="rounded-none indicator">
+            <div class="indicator">
+              <div
+                class="w-20 h-24 text-white flex flex-col items-center justify-center bg-[#95E1D3] indicator-item indicator-middle indicator-start ml-10 mt-10">
+                <h3 class="text-5xl font-bold">14</h3>
+                <h6 class="font-roboto italic block">Jan</h6>
               </div>
+              <img src="./asset/images/lblog.png" alt="Shoes" class="w-full px-8" />
+            </div>
+          </figure>
+          <div class="card-body items-start w-full">
+            <h2>incididunt ut labore et dolore</h2>
+            <p class="text-gray-400 font-roboto">Elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+              aliqua.</p>
+            <hr class="w-full bg-gray-400 my-5">
+            <div class="flex gap-3 text-gray-400 items-center">
+              <i class="fa fa-eye text-[#95E1D3]"></i> 1560 <i class="fa fa-comment-dots text-[#95E1D3]"></i> 98
             </div>
           </div>
         </div>
-        <div>
-          <img src="asset/images/layer-contacts.png" alt="services" />
-          <div>
-            <div class="name">MATTHEW DIX</div>
-            <div class="comment">
-              <p>
-                Elit, sed do eiusmod tempor incididunt ut labore et dolore
-                magna aliqua.
-              </p>
-              <div class="views-comment">
-                <img src="asset/images/eye.png" alt="" /><i> 1560 </i>
-                <img src="asset/images/speech-bubbols.png" alt="message" /><i>
-                  98</i>
+        <div class="card rounded-none">
+          <figure class="rounded-none indicator">
+            <div class="indicator">
+              <div
+                class="w-20 h-24 text-white flex flex-col items-center justify-center bg-[#95E1D3] indicator-item indicator-middle indicator-start ml-10 mt-10">
+                <h3 class="text-5xl font-bold">14</h3>
+                <h6 class="font-roboto italic block">Jan</h6>
               </div>
+              <img src="./asset/images/lblog.png" alt="Shoes" class="w-full px-8" />
+            </div>
+          </figure>
+          <div class="card-body items-start w-full">
+            <h2>incididunt ut labore et dolore</h2>
+            <p class="text-gray-400 font-roboto">Elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+              aliqua.</p>
+            <hr class="w-full bg-gray-400 my-5">
+            <div class="flex gap-3 text-gray-400 items-center">
+              <i class="fa fa-eye text-[#95E1D3]"></i> 1560 <i class="fa fa-comment-dots text-[#95E1D3]"></i> 98
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="categories">
-      <div class="row">
-        <div>
-          <div>
-            <img src="asset/images/location-pin.png" alt="location" />
-          </div>
-          <h4>OPEN MAP</h4>
-          <img src="asset/images/lineThrough-red.png" alt="LINE" />
+    <div id="map">
+      <div class="flex justify-center items-center py-16 bg-gray-300 bg-opacity-90">
+        <div class="text-[#f38181] flex flex-col justify-center items-center space-y-5">
+          <i class="fa fa-2x fa-location-pin"></i>
+          <h4 class="text-2xl font-bold">OPEN MAP</h4>
+          <hr class="bg-[#f38181] h-1 w-24">
         </div>
       </div>
     </div>
@@ -699,101 +991,103 @@
   <!-- END COMMENT SECTION -->
   <!-- START FOOTER SECTION -->
   <div id="footer-section">
-    <div class="row">
-      <div class="left">
-        <p class="logo">MoGo</p>
-        <div>
+    <div class="container flex flex-col xl:flex-row p-16 gap-5">
+      <!-- Left Side Footer -->
+      <aside class="flex-1 space-y-6">
+        <h5 class="text-5xl font-bold text-gray-400">MoGo</h5>
+        <p class="font-roboto text-gray-400">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
           ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
           aliquip ex ea commodo consequat. Duis aute irure dolor in
           reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
           pariatur.
-        </div>
+        </p>
         <div class="share">
           <div class="followers"><strong>15k</strong> followers</div>
-          <div class="share-buttons">
-            <p>Follow Us:</p>
-            <a href="#"><img src="asset/images/facebook.png" alt="share" /></a>
-            <a href="#"><img src="asset/images/instragram.png" alt="share" /></a>
-            <a href="#"><img src="asset/images/facebook.png" alt="share" /></a>
-            <a href="#"><img src="asset/images/instragram.png" alt="share" /></a>
-            <a href="#"><img src="asset/images/facebook.png" alt="share" /></a>
-            <a href="#"><img src="asset/images/instragram.png" alt="share" /></a>
-            <a href="#"><img src="asset/images/facebook.png" alt="share" /></a>
-            <a href="#"><img src="asset/images/instragram.png" alt="share" /></a>
-            <a href="#"><img src="asset/images/facebook.png" alt="share" /></a>
+          <hr class="w-full bg-gray-200 my-5">
+          <div class="flex gap-5 items-center">
+            <p class="font-roboto italic">Follow Us:</p>
+            <a href="#"><img src="./asset/images/facebook.png" alt="share" /></a>
+            <a href="#"><img src="./asset/images/instragram.png" alt="share" /></a>
+            <a href="#"><img src="./asset/images/facebook.png" alt="share" /></a>
+            <a href="#"><img src="./asset/images/instragram.png" alt="share" /></a>
+            <a href="#"><img src="./asset/images/facebook.png" alt="share" /></a>
+            <a href="#"><img src="./asset/images/instragram.png" alt="share" /></a>
+            <a href="#"><img src="./asset/images/facebook.png" alt="share" /></a>
+            <a href="#"><img src="./asset/images/instragram.png" alt="share" /></a>
+            <a href="#"><img src="./asset/images/facebook.png" alt="share" /></a>
           </div>
-          <div class="subscribe">
-            <input type="email" name="email" id="Email" placeholder="Your Email ..." /><button type="submit">
+          <div class="flex py-10">
+            <input class="border border-gray-200 rounded-none text-gray-400 p-4 font-roboto italic" type="email"
+              name="email" id="Email" placeholder="Your Email ..." /><button
+              class="rounded-none text-white bg-[#95E1D3] font-bold px-10 py-4" type="submit">
               SUBSCRIBE
             </button>
           </div>
         </div>
-      </div>
-      <div class="middle">
-        <p>BLOGS</p>
-        <div class="row">
-          <div class="card">
-            <div class="card-header">
-              <img src="asset/images/pictures-01-small.png" alt="Alarm" />
+      </aside>
+      <!-- Middle Footer -->
+      <aside class="flex-1">
+        <h5 class="text-black">BLOGS</h5>
+        <div class="card card-side">
+          <figure class="card-header">
+            <img class="min-h-[100px]" src="./asset/images/pictures-01-small.png" alt="Alarm" />
+          </figure>
+          <div class="card-body">
+            <div class="card-title">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+              do eiusmod tempor.
             </div>
-            <div class="card-body">
-              <div class="card-title">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                do eiusmod tempor.
-              </div>
-              <p class="card-text">Jan 9, 2016</p>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-header">
-              <img src="asset/images/pictures-01-small.png" alt="Alarm" />
-            </div>
-            <div class="card-body">
-              <div class="card-title">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                do eiusmod tempor.
-              </div>
-              <p class="card-text">Jan 9, 2016</p>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-header">
-              <img src="asset/images/pictures-01-small.png" alt="Alarm" />
-            </div>
-            <div class="card-body">
-              <div class="card-title">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                do eiusmod tempor.
-              </div>
-              <p class="card-text">Jan 9, 2016</p>
-            </div>
+            <p class="font-roboto">Jan 9, 2016</p>
           </div>
         </div>
-      </div>
-      <div class="right">
-        <p>INSTRAGRAM</p>
-        <div class="instragram">
-          <img src="asset/images/pictures-02-small.png" alt="pic" /><img src="asset/images/pictures-02-small.png"
-            alt="" /><img src="asset/images/pictures-02-small.png" alt="" /><img
-            src="asset/images/pictures-02-small.png" alt="" /><img src="asset/images/pictures-02-small.png"
-            alt="" /><img src="asset/images/pictures-02-small.png" alt="" /><img
-            src="asset/images/pictures-02-small.png" alt="" /><img src="asset/images/pictures-02-small.png"
-            alt="" /><img src="asset/images/pictures-02-small.png" alt="" />
+        <div class="card card-side">
+          <figure class="card-header">
+            <img class="min-h-[100px]" src="./asset/images/pictures-01-small.png" alt="Alarm" />
+          </figure>
+          <div class="card-body">
+            <div class="card-title">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+              do eiusmod tempor.
+            </div>
+            <p class="font-roboto">Jan 9, 2016</p>
+          </div>
         </div>
-      </div>
+        <div class="card card-side">
+          <figure class="card-header">
+            <img class="min-h-[100px]" src="./asset/images/pictures-01-small.png" alt="Alarm" />
+          </figure>
+          <div class="card-body">
+            <div class="card-title">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+              do eiusmod tempor.
+            </div>
+            <p class="font-roboto">Jan 9, 2016</p>
+          </div>
+        </div>
+      </aside>
+      <!-- Right Footer -->
+      <aside class="flex-1">
+        <h5 class="text-black pb-5">INSTRAGRAM</h5>
+        <div class="grid grid-cols-3 gap-1">
+          <img class="w-full" src="./asset/images/pictures-02-small.png" alt="pic" />
+          <img class="w-full" src="./asset/images/pictures-02-small.png" alt="" />
+          <img class="w-full" src="./asset/images/pictures-02-small.png" alt="" />
+          <img class="w-full" src="./asset/images/pictures-02-small.png" alt="" />
+          <img class="w-full" src="./asset/images/pictures-02-small.png" alt="" />
+          <img class="w-full" src="./asset/images/pictures-02-small.png" alt="" />
+          <img class="w-full" src="./asset/images/pictures-02-small.png" alt="" />
+          <img class="w-full" src="./asset/images/pictures-02-small.png" alt="" />
+          <img class="w-full" src="./asset/images/pictures-02-small.png" alt="" />
+        </div>
+      </aside>
     </div>
-    <div class="footer">
+    <div class="container border-0 border-t-[1px] border-gray-200 py-10 text-center">
       &copy; 2016 MoGo free PSD template by <a href="#">Laaqiq</a>
     </div>
   </div>
   <!-- END FOOTER SECTION -->
-
-  <!-- JS SCRIPTS -->
-  <script src="sellers/js/html5shiv.min.js"></script>
-  <script src="sellers/js/respond.min.js"></script>
-  <script src="sellers/js/selectivizr-min.js"></script>
 </body>
 
 </html>

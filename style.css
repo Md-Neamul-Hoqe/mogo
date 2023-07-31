@@ -1,4 +1,4 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -14,4 +14,73 @@
 
 .font-kaushan-script {
   font-family: "Kaushan Script", cursive;
+}
+
+#home-section{
+  background: url("./asset/images/home_banner.jpg") center center;
+  background-size: cover;
+}
+figure.hoverEffect:hover>img:first-child {
+  opacity: 90%;
+}
+
+#comment-section {
+  background: #f5f5f5 url("./asset/images/comment_banner.jpg") top left;
+  background-size: cover;
+}
+
+figure.hoverEffect:hover>img:nth-child(1),
+figure.hoverEffect:hover>img:nth-child(2) {
+  left: -0.5rem;
+  top: -0.5rem;
+}
+
+figure.hoverEffect:hover+div {
+  /* width: 80%; */
+  display: flex;
+  margin: 0 auto;
+}
+
+/* figure.hoverEffect:hover+div a i {
+  width: calc(100%/10);
+} */
+
+#accordion p {
+  scrollbar-color: #00eaff #f5f5f5;
+}
+
+#portfolio-section div.grid div>img+div,
+#portfolio-section div.grid div:hover>img {
+  display: none;
+}
+
+#portfolio-section div.grid div:hover>img+div,
+#portfolio-section div.grid div>img {
+  display: grid;
+  width: 100%;
+}
+
+.image-full {
+  border-radius: 0;
+}
+
+.card,
+.card-body,
+figure,
+img {
+  border-radius: 0;
+}
+
+#map {
+  background: url("./asset/images/map.jpg") top left;
+  background-size: cover;
+}
+
+.card.image-full:before {
+  border-radius: 0;
+  background-image: linear-gradient(to bottom, #f38181, #fce38a);
+}
+
+:where(.stats) > :not([hidden]) ~ :not([hidden]){
+  border-color: #e6e6e6;
 }
